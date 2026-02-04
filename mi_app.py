@@ -1,5 +1,6 @@
 import streamlit as st
 import yfinance as yf
+import pandas as pd
 import requests
 from streamlit_autorefresh import st_autorefresh
 
@@ -61,3 +62,4 @@ if st.toggle("🛰️ Activar Escáner de Señales VIP", value=True):
         st.success(f"✅ Señal enviada para {resultado[0]} a las {pd.Timestamp.now()}")
 else:
     st.warning("Escáner en pausa.")
+
